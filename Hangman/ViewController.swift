@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var lives : Int = 10
     
     @IBOutlet weak var livesLabel : UILabel!
-    @IBOutlet weak var wordLabel : UILabel!
+    @IBOutlet weak var hintLabel : UILabel!
     @IBOutlet weak var userInput : UITextField!
     
     override func viewDidLoad() {
@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         var i = word.characters.count
         var newLabel : String = ""
         while i > 0 {
-            newLabel = newLabel+"*"
+            newLabel = newLabel+"_ "
             i-=1
         }
-        wordLabel.text = newLabel
+        hintLabel.text = newLabel
         initializeGame(word: word)
         
     }

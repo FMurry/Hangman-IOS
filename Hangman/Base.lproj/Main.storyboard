@@ -57,9 +57,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="hintLabel" destination="Bak-KE-2Cz" id="Y2n-I3-90k"/>
                         <outlet property="livesLabel" destination="4Yt-k2-A1A" id="rHY-Ac-GEA"/>
                         <outlet property="userInput" destination="NGg-m6-epI" id="GPT-Pb-44w"/>
-                        <outlet property="wordLabel" destination="Bak-KE-2Cz" id="CJL-5V-rc7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
