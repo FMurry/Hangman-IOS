@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     let dictionary : [Int: String] = [0: "Hello", 1: "World", 2: "Developer", 3: "Software", 4: "Apple", 5: "Mobile"]
     let TAG : String = "ViewController:"
     let alphabet : [String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    var lives : Int = 10
+    var lives : Int = 7
     var word : String!
+    var points : Int = 0
     
     @IBOutlet weak var livesLabel : UILabel!
     @IBOutlet weak var hintLabel : UILabel!
@@ -23,6 +24,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        initializeWord()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func initializeWord() {
         let randomNumber : Int = Int(arc4random_uniform(5))
         word = dictionary[randomNumber]
         print(TAG + " Word is:" + word)
@@ -34,12 +45,7 @@ class ViewController: UIViewController {
         }
         hintLabel.text = newLabel
         initializeGame(word: word)
-        
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     /**
@@ -53,8 +59,6 @@ class ViewController: UIViewController {
             livesToString = livesToString + "❤︎"
             i-=1
         }
-        let length : Int = word.characters.count
-        print(TAG + " Length is: ", length)
         print(TAG + " Lives are: " + livesToString)
         livesLabel.text = livesToString
         print(TAG, "Done initializing game.....")
@@ -63,18 +67,16 @@ class ViewController: UIViewController {
     
     @IBAction func game(sender : AnyObject) {
         let button : UIButton = sender as! UIButton
+        button.isEnabled = false
         let c = alphabet[button.tag]
-        print(TAG+c)
         var i = 0
         let characters = Array(word.characters)
-        print(TAG+"Characters:",characters)
         var found : Bool = false
         
         for character in characters {
-            print(TAG+"char:",character)
             if c == String(character).lowercased() {
-               found = true
-               print(TAG+"Match")
+                points += 1
+                found = true
                 if i == 0{
                     var label = [Character](hintLabel.text!.characters)
                     label[0] = Character(c)
@@ -96,6 +98,15 @@ class ViewController: UIViewController {
             setHearts()
             
         }
+        if points == word.characters.count {
+            //Winning state
+            print(TAG+" You Win!!!")
+            let alertController = UIAlertController(title: "You Win", message: " You beat the game! Play again?", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style:
+                UIAlertActionStyle.default, handler: {action in self.restartGame()}))
+            self.present(alertController, animated: true, completion:
+                nil)
+        }
     }
     
     func setHearts() {
@@ -107,7 +118,24 @@ class ViewController: UIViewController {
         }
         print(TAG + " Lives are: " + livesToString)
         livesLabel.text = livesToString
+        if lives == 0 {
+            //Losing state
+            print(TAG+" You Lose!!!")
+            let alertController = UIAlertController(title: "You Lose", message: "Try again?", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Restart", style:
+                UIAlertActionStyle.destructive, handler: {action in self.restartGame()}))
+            self.present(alertController, animated: true, completion:
+                nil)
+        }
     }
-
+    
+    func restartGame() {
+        print(TAG+" Restart Called")
+        loadView()
+        lives = 7
+        points = 0
+        initializeWord()
+       
+    }
 }
 
