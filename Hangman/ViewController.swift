@@ -11,7 +11,7 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    let dictionary : [Int: String] = [0: "Hello", 1: "World", 2: "Developer", 3: "Software", 4: "Apple", 5: "Mobile"]
+    let dictionary : [Int: String] = [0: "Hello", 1: "World", 2: "Developer", 3: "Software", 4: "Apple", 5: "Mobile", 6: "Dog", 7: "Cat"]
     let TAG : String = "ViewController:"
     let alphabet : [String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     var lives : Int = 7
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
     
     
     func initializeWord() {
-        let randomNumber : Int = Int(arc4random_uniform(5))
+        print(TAG,dictionary.count-1)
+        let randomNumber : Int = Int(arc4random_uniform(UInt32(dictionary.count)))
         word = dictionary[randomNumber]
         print(TAG + " Word is:" + word)
         var i = word.characters.count
@@ -136,6 +137,14 @@ class ViewController: UIViewController {
         points = 0
         initializeWord()
        
+    }
+    
+    @IBAction func restartGamefromAction() {
+        print(TAG+" Restart Called")
+        loadView()
+        lives = 7
+        points = 0
+        initializeWord()
     }
 }
 
