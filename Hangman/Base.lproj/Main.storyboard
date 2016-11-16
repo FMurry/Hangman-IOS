@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,238 +22,208 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hangman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kn-Af-VUZ">
-                                <frame key="frameInset" minX="109" minY="44" width="156" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hangman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kn-Af-VUZ">
+                                <rect key="frame" x="109" y="44" width="156" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lives: * * * * * * *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-k2-A1A">
-                                <frame key="frameInset" minX="16" minY="20" width="238" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lives: * * * * * * *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-k2-A1A">
+                                <rect key="frame" x="16" y="20" width="238" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.0076385122470000004" blue="0.01092750709" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-KE-2Cz">
-                                <frame key="frameInset" minX="47" minY="161" width="265" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-KE-2Cz">
+                                <rect key="frame" x="47" y="161" width="265" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypP-Kf-087">
-                                <frame key="frameInset" minX="58" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypP-Kf-087">
+                                <rect key="frame" x="58" y="261" width="30" height="30"/>
                                 <state key="normal" title="A"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahE-Hw-WPW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-p7-RBz">
-                                <frame key="frameInset" minX="103" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-p7-RBz">
+                                <rect key="frame" x="103" y="261" width="30" height="30"/>
                                 <state key="normal" title="B"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7E-2V-GXK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-s3-Yu5">
-                                <frame key="frameInset" minX="141" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-s3-Yu5">
+                                <rect key="frame" x="141" y="261" width="30" height="30"/>
                                 <state key="normal" title="C"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SoW-tz-elS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFl-6R-D3w">
-                                <frame key="frameInset" minX="178" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFl-6R-D3w">
+                                <rect key="frame" x="178" y="261" width="30" height="30"/>
                                 <state key="normal" title="D"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAl-3P-mN1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-4J-K5S">
-                                <frame key="frameInset" minX="216" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-4J-K5S">
+                                <rect key="frame" x="216" y="261" width="30" height="30"/>
                                 <state key="normal" title="E"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LbK-vC-fOr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIO-kK-8FH">
-                                <frame key="frameInset" minX="254" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIO-kK-8FH">
+                                <rect key="frame" x="254" y="261" width="30" height="30"/>
                                 <state key="normal" title="F"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXL-C8-Gr7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YW-zo-XUH">
-                                <frame key="frameInset" minX="287" minY="261" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YW-zo-XUH">
+                                <rect key="frame" x="287" y="261" width="30" height="30"/>
                                 <state key="normal" title="G"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tM5-wL-otq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdT-mO-Ch6">
-                                <frame key="frameInset" minX="58" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdT-mO-Ch6">
+                                <rect key="frame" x="58" y="299" width="30" height="30"/>
                                 <state key="normal" title="H"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyw-4S-PCF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee6-3f-m3A" userLabel="I">
-                                <frame key="frameInset" minX="103" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee6-3f-m3A" userLabel="I">
+                                <rect key="frame" x="103" y="299" width="30" height="30"/>
                                 <state key="normal" title="I"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xm6-uF-olL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-EC-2lU">
-                                <frame key="frameInset" minX="141" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-EC-2lU">
+                                <rect key="frame" x="141" y="299" width="30" height="30"/>
                                 <state key="normal" title="J"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytv-Yf-vLF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7As-sX-3FB">
-                                <frame key="frameInset" minX="178" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7As-sX-3FB">
+                                <rect key="frame" x="178" y="299" width="30" height="30"/>
                                 <state key="normal" title="K"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEZ-zA-hgw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4i-df-kHt">
-                                <frame key="frameInset" minX="216" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4i-df-kHt">
+                                <rect key="frame" x="216" y="299" width="30" height="30"/>
                                 <state key="normal" title="L"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pu-Lp-8na"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqb-C5-nwQ">
-                                <frame key="frameInset" minX="254" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqb-C5-nwQ">
+                                <rect key="frame" x="254" y="299" width="30" height="30"/>
                                 <state key="normal" title="M"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iH0-3n-xAE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-fV-GHA">
-                                <frame key="frameInset" minX="287" minY="299" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-fV-GHA">
+                                <rect key="frame" x="287" y="299" width="30" height="30"/>
                                 <state key="normal" title="N"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zE-eW-OmO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-ei-AWf">
-                                <frame key="frameInset" minX="58" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awb-ei-AWf">
+                                <rect key="frame" x="58" y="337" width="30" height="30"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3S-KS-8EI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7As-Ah-CSh">
-                                <frame key="frameInset" minX="103" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7As-Ah-CSh">
+                                <rect key="frame" x="103" y="337" width="30" height="30"/>
                                 <state key="normal" title="P"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8h7-Ye-Y4j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43t-ES-c5T">
-                                <frame key="frameInset" minX="141" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43t-ES-c5T">
+                                <rect key="frame" x="141" y="337" width="30" height="30"/>
                                 <state key="normal" title="Q"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bK-hw-BP1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-Aj-is8">
-                                <frame key="frameInset" minX="178" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-Aj-is8">
+                                <rect key="frame" x="178" y="337" width="30" height="30"/>
                                 <state key="normal" title="R"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LC-MN-hbZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7F-1c-n6V">
-                                <frame key="frameInset" minX="216" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7F-1c-n6V">
+                                <rect key="frame" x="216" y="337" width="30" height="30"/>
                                 <state key="normal" title="S"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEm-nu-4xi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-rR-jaU">
-                                <frame key="frameInset" minX="254" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-rR-jaU">
+                                <rect key="frame" x="254" y="337" width="30" height="30"/>
                                 <state key="normal" title="T"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bR5-Go-vf1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-TK-NXT">
-                                <frame key="frameInset" minX="287" minY="337" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-TK-NXT">
+                                <rect key="frame" x="287" y="337" width="30" height="30"/>
                                 <state key="normal" title="U"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ElS-mf-yiR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-ij-c9u">
-                                <frame key="frameInset" minX="90" minY="375" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-ij-c9u">
+                                <rect key="frame" x="90" y="375" width="30" height="30"/>
                                 <state key="normal" title="V"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwQ-Lj-HOy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66a-xW-4Dr">
-                                <frame key="frameInset" minX="135" minY="375" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66a-xW-4Dr">
+                                <rect key="frame" x="135" y="375" width="30" height="30"/>
                                 <state key="normal" title="W"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vci-Of-eSi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-a3-ZQG">
-                                <frame key="frameInset" minX="173" minY="375" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YY-a3-ZQG">
+                                <rect key="frame" x="173" y="375" width="30" height="30"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEz-Io-J8w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-uq-Dxy">
-                                <frame key="frameInset" minX="210" minY="375" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldA-uq-Dxy">
+                                <rect key="frame" x="210" y="375" width="30" height="30"/>
                                 <state key="normal" title="Y"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ny-xT-S5a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-LM-RJV">
-                                <frame key="frameInset" minX="248" minY="375" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-LM-RJV">
+                                <rect key="frame" x="248" y="375" width="30" height="30"/>
                                 <state key="normal" title="Z"/>
                                 <connections>
                                     <action selector="gameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Moa-AA-XP8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-Gh-rIo">
-                                <frame key="frameInset" minX="152" minY="467" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-Gh-rIo">
+                                <rect key="frame" x="152" y="467" width="70" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" red="1" green="0.60676859549999995" blue="0.23218585119999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,6 +234,69 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="43t-ES-c5T" firstAttribute="bottom" secondItem="7As-Ah-CSh" secondAttribute="bottom" id="0vD-Xe-Ggk"/>
+                            <constraint firstItem="tIO-kK-8FH" firstAttribute="leading" secondItem="vRr-4J-K5S" secondAttribute="trailing" constant="8" id="3S1-D8-H8p"/>
+                            <constraint firstItem="5kQ-EC-2lU" firstAttribute="bottom" secondItem="ee6-3f-m3A" secondAttribute="bottom" id="4Oh-7c-BD5"/>
+                            <constraint firstItem="9Kn-Af-VUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bv-M4-BCw"/>
+                            <constraint firstItem="ihw-s3-Yu5" firstAttribute="leading" secondItem="Bc1-p7-RBz" secondAttribute="trailing" constant="8" id="5VA-zl-4if"/>
+                            <constraint firstItem="ee6-3f-m3A" firstAttribute="leading" secondItem="pdT-mO-Ch6" secondAttribute="trailing" constant="15" id="5pi-Vt-Z0k"/>
+                            <constraint firstItem="U7c-rR-jaU" firstAttribute="bottom" secondItem="T7F-1c-n6V" secondAttribute="bottom" id="5xH-uh-YOD"/>
+                            <constraint firstItem="ee6-3f-m3A" firstAttribute="bottom" secondItem="pdT-mO-Ch6" secondAttribute="bottom" id="94M-6J-Z2U"/>
+                            <constraint firstItem="Bc1-p7-RBz" firstAttribute="leading" secondItem="ypP-Kf-087" secondAttribute="trailing" constant="15" id="AZL-RU-9wW"/>
+                            <constraint firstItem="xqb-C5-nwQ" firstAttribute="leading" secondItem="w4i-df-kHt" secondAttribute="trailing" constant="8" id="Ami-kT-zy6"/>
+                            <constraint firstItem="U7c-rR-jaU" firstAttribute="leading" secondItem="T7F-1c-n6V" secondAttribute="trailing" constant="8" id="B6J-d4-083"/>
+                            <constraint firstItem="5YW-zo-XUH" firstAttribute="bottom" secondItem="tIO-kK-8FH" secondAttribute="bottom" id="CD6-Ew-BOa"/>
+                            <constraint firstItem="VFl-6R-D3w" firstAttribute="bottom" secondItem="ihw-s3-Yu5" secondAttribute="bottom" id="Cp3-3n-kZ0"/>
+                            <constraint firstItem="ihw-s3-Yu5" firstAttribute="bottom" secondItem="Bc1-p7-RBz" secondAttribute="bottom" id="DOp-G4-NuH"/>
+                            <constraint firstItem="7As-sX-3FB" firstAttribute="leading" secondItem="5kQ-EC-2lU" secondAttribute="trailing" constant="7" id="ERo-U5-pld"/>
+                            <constraint firstItem="7As-Ah-CSh" firstAttribute="bottom" secondItem="Awb-ei-AWf" secondAttribute="bottom" id="Ebs-3E-pqY"/>
+                            <constraint firstItem="T7F-1c-n6V" firstAttribute="bottom" secondItem="6ZI-Aj-is8" secondAttribute="bottom" id="HLr-mZ-KWo"/>
+                            <constraint firstItem="ypP-Kf-087" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="IuQ-nX-GWQ"/>
+                            <constraint firstItem="w4i-df-kHt" firstAttribute="bottom" secondItem="7As-sX-3FB" secondAttribute="bottom" id="Iyt-ur-Arw"/>
+                            <constraint firstItem="6ZI-Aj-is8" firstAttribute="leading" secondItem="43t-ES-c5T" secondAttribute="trailing" constant="7" id="Lb7-HC-jBT"/>
+                            <constraint firstItem="5YW-zo-XUH" firstAttribute="leading" secondItem="tIO-kK-8FH" secondAttribute="trailing" constant="3" id="Lgb-5K-BMz"/>
+                            <constraint firstItem="3YY-a3-ZQG" firstAttribute="bottom" secondItem="66a-xW-4Dr" secondAttribute="bottom" id="Lub-Ha-39k"/>
+                            <constraint firstItem="6pL-fV-GHA" firstAttribute="leading" secondItem="xqb-C5-nwQ" secondAttribute="trailing" constant="3" id="Mul-iW-EnJ"/>
+                            <constraint firstItem="w4i-df-kHt" firstAttribute="leading" secondItem="7As-sX-3FB" secondAttribute="trailing" constant="8" id="NgU-qz-8w2"/>
+                            <constraint firstItem="Bc1-p7-RBz" firstAttribute="bottom" secondItem="ypP-Kf-087" secondAttribute="bottom" id="QV9-Sl-sdi"/>
+                            <constraint firstItem="3kF-TK-NXT" firstAttribute="bottom" secondItem="U7c-rR-jaU" secondAttribute="bottom" id="R0w-n3-V1h"/>
+                            <constraint firstItem="BDc-ij-c9u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="RX4-x4-6yv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ypP-Kf-087" secondAttribute="bottom" constant="376" id="Rv4-3F-cGX"/>
+                            <constraint firstItem="zkQ-LM-RJV" firstAttribute="bottom" secondItem="ldA-uq-Dxy" secondAttribute="bottom" id="TTq-FR-JjW"/>
+                            <constraint firstItem="pdT-mO-Ch6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="UWm-lq-1Ku"/>
+                            <constraint firstItem="43t-ES-c5T" firstAttribute="leading" secondItem="7As-Ah-CSh" secondAttribute="trailing" constant="8" id="Ui5-dg-G3r"/>
+                            <constraint firstItem="xqb-C5-nwQ" firstAttribute="bottom" secondItem="w4i-df-kHt" secondAttribute="bottom" id="V1V-lb-Ehe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Awb-ei-AWf" secondAttribute="bottom" constant="300" id="Vgd-1w-gS3"/>
+                            <constraint firstItem="BDc-ij-c9u" firstAttribute="top" secondItem="Awb-ei-AWf" secondAttribute="bottom" constant="8" id="Xq5-Qr-jcz"/>
+                            <constraint firstItem="Bak-KE-2Cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a2s-9y-Ut1"/>
+                            <constraint firstItem="5kQ-EC-2lU" firstAttribute="leading" secondItem="ee6-3f-m3A" secondAttribute="trailing" constant="8" id="a74-r2-qmI"/>
+                            <constraint firstItem="zkQ-LM-RJV" firstAttribute="leading" secondItem="ldA-uq-Dxy" secondAttribute="trailing" constant="8" id="a75-zz-fMf"/>
+                            <constraint firstItem="6ZI-Aj-is8" firstAttribute="bottom" secondItem="43t-ES-c5T" secondAttribute="bottom" id="aba-2n-vH6"/>
+                            <constraint firstItem="tIO-kK-8FH" firstAttribute="bottom" secondItem="vRr-4J-K5S" secondAttribute="bottom" id="b7p-c0-eae"/>
+                            <constraint firstItem="ldA-uq-Dxy" firstAttribute="leading" secondItem="3YY-a3-ZQG" secondAttribute="trailing" constant="7" id="b8u-i9-lBY"/>
+                            <constraint firstItem="3kF-TK-NXT" firstAttribute="leading" secondItem="U7c-rR-jaU" secondAttribute="trailing" constant="3" id="bXj-XZ-6WZ"/>
+                            <constraint firstItem="66a-xW-4Dr" firstAttribute="leading" secondItem="BDc-ij-c9u" secondAttribute="trailing" constant="15" id="egG-5n-aOF"/>
+                            <constraint firstItem="7As-Ah-CSh" firstAttribute="leading" secondItem="Awb-ei-AWf" secondAttribute="trailing" constant="15" id="fQM-SG-gr7"/>
+                            <constraint firstItem="Bak-KE-2Cz" firstAttribute="top" secondItem="9Kn-Af-VUZ" secondAttribute="bottom" constant="53" id="fWG-NE-bep"/>
+                            <constraint firstItem="Yhx-Gh-rIo" firstAttribute="top" secondItem="3YY-a3-ZQG" secondAttribute="bottom" constant="62" id="gdy-OJ-Vp1"/>
+                            <constraint firstItem="vRr-4J-K5S" firstAttribute="bottom" secondItem="VFl-6R-D3w" secondAttribute="bottom" id="hHK-TT-w6Z"/>
+                            <constraint firstItem="Awb-ei-AWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="i7F-aI-bsY"/>
+                            <constraint firstItem="9Kn-Af-VUZ" firstAttribute="top" secondItem="4Yt-k2-A1A" secondAttribute="bottom" constant="20" id="j2r-uT-CYy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Yt-k2-A1A" secondAttribute="bottom" constant="610" id="lTX-un-S1E"/>
+                            <constraint firstItem="Yhx-Gh-rIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUP-jV-Okk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pdT-mO-Ch6" secondAttribute="bottom" constant="338" id="ljZ-Y2-6XU"/>
+                            <constraint firstItem="7As-sX-3FB" firstAttribute="bottom" secondItem="5kQ-EC-2lU" secondAttribute="bottom" id="lrQ-ed-CjK"/>
+                            <constraint firstItem="VFl-6R-D3w" firstAttribute="leading" secondItem="ihw-s3-Yu5" secondAttribute="trailing" constant="7" id="nep-YG-gcz"/>
+                            <constraint firstItem="6pL-fV-GHA" firstAttribute="bottom" secondItem="xqb-C5-nwQ" secondAttribute="bottom" id="qcg-Oq-Yax"/>
+                            <constraint firstItem="vRr-4J-K5S" firstAttribute="leading" secondItem="VFl-6R-D3w" secondAttribute="trailing" constant="8" id="s1N-bL-PDX"/>
+                            <constraint firstItem="Awb-ei-AWf" firstAttribute="top" secondItem="pdT-mO-Ch6" secondAttribute="bottom" constant="8" id="tmI-Gn-v52"/>
+                            <constraint firstItem="T7F-1c-n6V" firstAttribute="leading" secondItem="6ZI-Aj-is8" secondAttribute="trailing" constant="8" id="v2X-9H-fWc"/>
+                            <constraint firstItem="pdT-mO-Ch6" firstAttribute="top" secondItem="ypP-Kf-087" secondAttribute="bottom" constant="8" id="v8g-kw-88H"/>
+                            <constraint firstItem="ldA-uq-Dxy" firstAttribute="bottom" secondItem="3YY-a3-ZQG" secondAttribute="bottom" id="wXQ-j2-Pyo"/>
+                            <constraint firstItem="66a-xW-4Dr" firstAttribute="bottom" secondItem="BDc-ij-c9u" secondAttribute="bottom" id="xDk-wL-0YM"/>
+                            <constraint firstItem="3YY-a3-ZQG" firstAttribute="leading" secondItem="66a-xW-4Dr" secondAttribute="trailing" constant="8" id="xEP-Ka-cyn"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="hintLabel" destination="Bak-KE-2Cz" id="Y2n-I3-90k"/>
